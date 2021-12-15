@@ -299,7 +299,6 @@ h6 small {
 }
 
 .page-about-content-general {
-    padding-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -364,7 +363,6 @@ h6 small {
     text-align: center;
     padding-top: 50px;
     border-top: 1px solid #C8C8C8;
-    padding-bottom: 50px;
 }
 
 .page-about-content-committee h6 {
@@ -387,9 +385,10 @@ h6 small {
     margin: 5px;
 }
 
-.page-about .page-content,
-.page-projects .page-content {
+.page-content {
     background: linear-gradient(to bottom, #ffffff, #F4F4F4);
+    padding-top: 50px;
+    padding-bottom: 80px;
 }
 
 #page_hero_section_projects {
@@ -423,11 +422,6 @@ h6 small {
 .project-category-tab:hover {
     color: #021120;
     border-bottom: 1px solid #021120;
-}
-
-.page-projects .page-content {
-    padding-top: 50px;
-    padding-bottom: 80px;
 }
 
 .projects-list {
@@ -505,4 +499,274 @@ h6 small {
 
 .project-category-tab-content.active {
     display: block;
+}
+
+.link-back {
+    font-family: "Gotham-Book";
+    color: #021120;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.single-project-title {
+    font-family: "Poppins-Bold";
+    color:  #021120;
+    letter-spacing: 3px;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.page-single-project-content-general p {
+    color: #021120;
+}
+
+.page-single-project-content-general img {
+    width: 350px;
+    margin-left: 30px;
+}
+
+.page-single-project-content-general img.right {
+    float: right;
+}
+
+#page_hero_section_get_involved {
+    background-image: url(../img/home-bg-healthy-living.png);
+}
+
+#page_hero_section_get_involved::before {
+    background: linear-gradient(to right, #810090, #E90D5F);
+    opacity: .9;
+}
+
+.form-row {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+    flex-wrap: wrap;
+}
+
+.form-col {
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+
+.form-col-4 {
+    width: 25%;
+}
+
+.form-col-3 {
+    width: 33.33%;
+}
+
+.form-col-1 {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom:  15px;
+}
+
+.form-group label {
+    font-family: "Poppins-Bold";
+    color: #021120;
+    font-size: 14px;   
+}
+
+.form-group label .label-required {
+    color: #E90D5F;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.page-get-involved form h4 {
+    font-family: "Poppins-Bold";
+    color: #E90D5F;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.page-get-involved form h6 {
+    font-family: "Poppins-Bold";
+    color: #E90D5F;
+    font-size: 16px;
+    letter-spacing: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.page-get-involved form h5 {
+    font-family: "Poppins-Bold";
+    color: #021120;
+    font-size: 16px;
+    letter-spacing: 0px;
+    margin-bottom: 15px;
+}
+
+.form-input {
+    font-family: "Poppins-Bold";
+    color: #021120;
+    font-size: 12px;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #E90D5F;
+    outline: none;
+}
+
+
+/* Customize the label (the container) */
+.form-radio-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.form-radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom radio button */
+.form-radio-container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid #E90D5F;
+}
+
+/* On mouse-over, add a grey background color */
+.form-radio-container:hover input ~ .checkmark {
+    background-color: #E90D5F;
+}
+
+/* When the radio button is checked, add a blue background */
+.form-radio-container input:checked ~ .checkmark {
+    background-color: #E90D5F;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.form-radio-container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.form-radio-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.form-radio-container .checkmark:after {
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.form-notes {
+    font-family: "Gotham-Book";
+    font-size: 16px;
+    background: #E90D5F;
+    color: #ffffff;
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+
+/* Customize the label (the container) */
+.form-checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.form-checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.form-checkbox-container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #E90D5F;
+}
+
+/* On mouse-over, add a grey background color */
+.form-checkbox-container:hover input ~ .checkmark {
+    background-color: #E90D5F;
+}
+
+/* When the checkbox is checked, add a blue background */
+.form-checkbox-container input:checked ~ .checkmark {
+    background-color: #E90D5F;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.form-checkbox-container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.form-checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.form-checkbox-container .checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.form-submit-btn {
+    font-family: "Poppins-Bold";
+    background: #E90D5F;
+    padding: 10px 30px;
+    font-size: 18px;
+    border: 0px;
+    color: #ffffff;
 }
