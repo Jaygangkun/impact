@@ -312,6 +312,8 @@ h6 small {
 .page-hero-section-content {
     position: relative;
     text-align: center;
+    width: 90%;
+    margin: auto;
 }
 
 #page_hero_section_about {
@@ -378,6 +380,7 @@ h6 small {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 100px;
 }
 
 .page-about-content-partner-wrap img {
@@ -462,6 +465,7 @@ h6 small {
     cursor: pointer;
     margin: 15px;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 .project__img {
@@ -487,6 +491,7 @@ h6 small {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    text-decoration: none;
 }
 
 .project-wrap-get-involved::before {
@@ -859,4 +864,273 @@ h6 small {
 
 #home_section_scroll_down_btn {
     cursor: pointer;
+}
+
+.mobile-navbar-btn {
+    display: none;
+}
+
+.project-category-tabs-mobile {
+    display: none;
+}
+
+.mobile-nav-links {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .header-nav-link {
+        padding: 15px 0px;
+        margin: 0px 20px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .project-category-tabs {
+        display: none;
+    }
+
+    .project-category-tabs-mobile {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .project-category-tabs__category-name {
+        display: inline-block;
+        font-family: "Gotham-Book";
+        font-size: 14px;
+        color: #021120;
+        cursor: pointer;
+        padding: 10px 15px;
+        flex-grow: 1;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .project-category-tab {
+        display: block;
+        border-bottom: 0px !important;
+        text-align: left;
+    }
+
+    .project-category-tabs-mobile-header {
+        border-bottom: 1px solid #021120;
+        position: relative;
+    }
+
+    #project_categories_tab_open {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #021120;
+    }
+
+    #project_categories_tab_open .fa-chevron-up {
+        display: none;
+    }
+
+    .opened #project_categories_tab_open .fa-chevron-up {
+        display: block;
+    }
+
+    .opened #project_categories_tab_open .fa-chevron-down {
+        display: none;
+    }
+
+    .project-category-tabs-mobile-body {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-text-info {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .footer-text-delimiter {
+        display: none;
+    }
+
+    .page-about-content-general img.right {
+        width: 100%;
+        float: none;
+        margin-left: 0px;
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h6 {
+        font-size: 24px;
+    }
+
+    .header {
+        padding: 30px 0px;
+    }
+
+    .header-wrap {
+        width: 80%;
+    }
+
+    .header-logo__img {
+        width: 150px;
+    }
+
+    .header-nav-links {
+        display: none;
+    }
+
+    .mobile-navbar-btn {
+        display: block;
+        font-size: 30px;
+        color: #ffffff;
+        position: relative;
+        z-index: 11;
+    }
+
+    .mobile-nav-links {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, #BF007A, #012197);
+        z-index: 10;
+        display: none;        
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .mobile-menu-open .mobile-nav-links {
+        display: flex;
+    }
+
+    .mobile-nav-link-wrap {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .mobile-nav-link {
+        color: #ffffff;
+        text-decoration: none;
+        font-family: "Gotham-Book";
+        font-size: 20px;
+    }
+
+    .mobile-nav-link:hover {
+        text-decoration: none;
+    }
+
+    .mobile-nav-link-round {
+        font-family: "Gotham-Book";
+        font-size: 20px;
+        color: #ffffff;
+        cursor: pointer;
+        text-decoration: none;
+        position: relative;
+        padding: 10px 20px;
+        border-radius: 40px;
+        border: 1px solid #ffffff;
+        display: inline-block;
+    }
+
+    #mobile_navbar_btn_close {
+        display: none;
+    }
+
+    .mobile-menu-open #mobile_navbar_btn_close {
+        display: block;
+    }
+
+    .mobile-menu-open #mobile_navbar_btn_open {
+        display: none;
+    }
+
+    .projects-list {
+        display: block;
+    }
+
+    .project-wrap {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+
+    .project__img {
+        width: 40%;
+        min-width: 150px;
+        margin-right: 10px;
+    }
+
+    .project-wrap-get-involved {
+        width: 100%;
+        padding: 10px;
+        display: block;
+        margin: 0px;
+        padding: 40px 20px;
+        box-sizing: border-box;
+    }
+
+    .project-wrap-get-involved-text {
+        position: relative;
+        left: initial;
+        bottom: initial;
+    }
+
+    .single-project-title {
+        font-size: 40px;
+    }
+
+    .page-single-project-content-general img.right {
+        width: 100%;
+        float: none;
+        margin-left: 0px;
+        margin-bottom: 30px;
+    }
+
+    .form-col-4 {
+        width: 100%;
+    }
+
+    .form-col-3 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .page-content-wrap {
+        width: 90%;
+    }
+
+    .header-wrap {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h6 {
+        font-size: 20px;
+    }
+
+    .header-logo__img {
+        width: 120px;
+    }
+
+    .single-project-title {
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    .form-col {
+        width: 100%;
+    }
 }
