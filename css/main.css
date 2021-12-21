@@ -373,8 +373,8 @@ h6 small {
 }
 
 .page-about-content-partner-wrap {
-    width: 14%;
-    margin: 5px;
+    width: 20%;
+    margin: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -407,7 +407,7 @@ h6 small {
 
 .page-about-content-committee-name {
     display: inline-block;
-    margin: 5px;
+    margin: 10px;
 }
 
 .page-content {
@@ -434,13 +434,14 @@ h6 small {
 .project-category-tab {
     display: inline-block;
     font-family: "Gotham-Book";
-    font-size: 12px;
+    font-size: 14px;
     color: #C8C8C8;
     cursor: pointer;
     padding: 10px 15px;
     border-bottom: 1px solid #C8C8C8;
     flex-grow: 1;
     text-align: center;
+    white-space: nowrap;
 }
 
 .project-category-tab.active,
@@ -711,6 +712,7 @@ h6 small {
 .form-notes {
     font-family: "Gotham-Book";
     font-size: 16px;
+    line-height: 25px;
     background: #E90D5F;
     color: #ffffff;
     padding: 15px;
@@ -718,6 +720,10 @@ h6 small {
     margin-top: 15px;
 }
 
+.form-notes a {
+    color: #012197;
+    text-decoration: none;
+}
 
 /* Customize the label (the container) */
 .form-checkbox-container {
@@ -848,5 +854,9 @@ h6 small {
 }
 
 .btn-collapse-times {
+    cursor: pointer;
+}
+
+#home_section_scroll_down_btn {
     cursor: pointer;
 }

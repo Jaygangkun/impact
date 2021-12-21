@@ -18,6 +18,10 @@
                 $(this).parents('.home-section').removeClass('expanded');
                 $(this).parents('.home-section').find('.home-section-expand-content').slideUp();
             })
+
+            $(document).on('click', '#home_section_scroll_down_btn', function() {
+                fullpage_api.moveSectionDown();
+            })
         }
 
         if($('.page-projects').length > 0) {
@@ -27,6 +31,12 @@
 
                 $('.project-category-tab-content').removeClass('active');
                 $('.project-category-tab-content[category="' + $(this).attr('category') + '"]').addClass('active');
+
+                // change get involved button height
+                if($('.active .projects-list .project-wrap').length % 3 == 0) {
+                    $('.active .projects-list .project-wrap-get-involved').height($('.active .projects-list .project-wrap').last().outerHeight());
+                }
+                
             })
         }
     })
