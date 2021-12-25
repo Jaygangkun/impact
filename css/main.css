@@ -85,6 +85,10 @@ body {
     /* padding: 50px 0px; */
 }
 
+.fp-auto-height .home-section {
+    height: auto;
+}
+
 .home-section::before {
     content: '';
     position: absolute;
@@ -186,6 +190,7 @@ h6 small {
     width: 100%;
     z-index: 1;
     background: transparent;
+    box-sizing: border-box;
 }
 
 .page-home .header-logo-link {
@@ -830,14 +835,16 @@ h6 small {
     position: relative;
     margin-bottom: 30px;
     display: none;
+    padding-left: 60px;
+    margin-left: -30px;
 }
 
 .home-section-expand-content::before {
     position: absolute;
     content: '';
-    left: 0px;
+    left: 30px;
     top: 0px;
-    width: 100%;
+    width: calc(100% - 30px);
     height: 100%;
     background-color: #021120;
     opacity: .5;
@@ -1101,6 +1108,17 @@ h6 small {
 
     .form-col-3 {
         width: 100%;
+    }
+
+    .home-section-content__img {
+        float: initial;
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 30px;
+    }
+
+    .home-section-content {
+        width: 90%;
     }
 }
 
