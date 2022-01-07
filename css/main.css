@@ -71,6 +71,7 @@ body {
     padding: 10px 20px;
     border-radius: 40px;
     border: 1px solid #ffffff;
+    margin-left: 30px;
 }
 
 .home-section {
@@ -846,12 +847,18 @@ h6 small {
     top: 0px;
     width: calc(100% - 30px);
     height: 100%;
-    background-color: #021120;
-    opacity: .5;
+    /* background-color: #021120;
+    opacity: .5; */
+    background-color: #ffffff;
 }
 
 .home-section-expand-content > * {
     position :relative;
+}
+
+.home-section-expand-content p {
+    color: #021120;
+    line-height: 1.6;
 }
 
 .home-section-content__img {
@@ -883,6 +890,65 @@ h6 small {
 
 .mobile-nav-links {
     display: none;
+}
+
+#home_section_nav_menu {
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: #ffffff;
+}
+
+.home-section-impact-btn-wrap {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.home-section-video {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.home-section video {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.home-section-video::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+}
+
+#home_section_healthy_living .home-section-video::after {
+    background: linear-gradient(to right, #810090, #E90D5F);
+}
+
+#home_section_educational .home-section-video::after {
+    background: linear-gradient(to right, #E90D5F, #FF8820);
+}
+
+#home_section_placemaking .home-section-video::after {
+    background: linear-gradient(to right, #810090, #E90D5F);
+}
+
+#home_section_economic .home-section-video::after {
+    background: linear-gradient(to right, #FE5341, #F6BA00);
 }
 
 @media screen and (max-width: 1024px) {

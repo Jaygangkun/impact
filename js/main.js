@@ -16,6 +16,8 @@
                 // scrollHorizontally: true,
                 scrollOverflow: true,
                 normalScrollElements: '.home-section',
+                navigation: true,
+                navigationPosition: 'left'
             });
 
             // $(".home-section").scroll(function() { //.box is the class of the div
@@ -32,22 +34,26 @@
                 'home_section_healthy_living': {
                     'prev': 'home_section_impact',
                     'next': 'home_section_educational',
-                    'index': 2
+                    'index': 2,
+                    'video': document.getElementById("home_section_healthy_living_video")
                 },
                 'home_section_educational': {
                     'prev': 'home_section_healthy_living',
                     'next': 'home_section_placemaking',
-                    'index': 3
+                    'index': 3,
+                    'video': document.getElementById("home_section_educational_video")
                 },
                 'home_section_placemaking': {
                     'prev': 'home_section_educational',
                     'next': 'home_section_economic',
-                    'index': 4
+                    'index': 4,
+                    'video': document.getElementById("home_section_placemaking_video")
                 },
                 'home_section_economic': {
                     'prev': 'home_section_placemaking',
                     'next': 'home_section_footer',
-                    'index': 5
+                    'index': 5,
+                    'video': document.getElementById("home_section_economic_video")
                 },
                 'home_section_footer': {
                     'prev': 'home_section_economic',
@@ -69,6 +75,10 @@
                     fullpage_api.moveTo(FPSections[desSectionID]['index']);
                 }
                 
+                if(FPSections[desSectionID].hasOwnProperty('video') && FPSections[desSectionID]['video'] != null && typeof FPSections[desSectionID]['video'] != 'undefined') {
+                    FPSections[desSectionID]['video'].play();
+                }
+                
             }
 
             $('.home-section').on('swipedown',function() {
@@ -84,6 +94,11 @@
             });
 
             $('.home-section').bind('mousewheel', function (e) {
+
+                if(typeof $(this).find('.home-section-content').offset() == 'undefined') {
+                    return;
+                }
+
                 console.log( $(this).find('.home-section-content').offset().top, $(this).find('.home-section-content').outerHeight(), $(window).height());
                 console.log(Math.floor($(this).find('.home-section-content').offset().top + $(this).find('.home-section-content').outerHeight() + 60), Math.floor($(window).height()));
 
