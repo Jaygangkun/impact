@@ -951,6 +951,11 @@ h6 small {
     background: linear-gradient(to right, #FE5341, #F6BA00);
 }
 
+
+.mobile-menu-open #fp-nav {
+    display: none;
+}
+
 @media screen and (max-width: 1024px) {
     .header-nav-link {
         padding: 15px 0px;
@@ -1218,3 +1223,37 @@ h6 small {
         width: 100%;
     }
 }
+
+@media screen and (max-width: 360px) {
+    .home-section-content {
+        width: 70%;
+    }
+
+    #fp-nav.fp-left {
+        left: 3px;
+    }
+
+    #home_section_impact .home-section__img {
+        width: 200px;
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    p {
+        line-height: 25px;
+    }
+
+    #fp-nav ul li, .fp-slidesNav ul li {
+        margin: 20px 5px;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    .home-section video {
+        height: 100%;
+        width: auto;
+    }
+ }
